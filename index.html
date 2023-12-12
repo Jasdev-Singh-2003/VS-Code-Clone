@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Studio Code</title>
+  <link rel="shortcut icon" href="Images/Favicon/icons8-visual-studio-code-96.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="d-flex">
+    <div class="header-containers hc-0 d-flex">
+      <a href="index.html">
+        <img class="VS-Code-Logo" src="Images/Logo-&-Icons/VS-Code-Logo.png" alt="VS-Code-Logo">
+      </a>
+      <button class="header-navigation"><span>file</span></button>
+      <button class="header-navigation"><span>edit</span></button>
+      <button class="header-navigation"><span>selection</span></button>
+      <button class="header-navigation"><span>view</span></button>
+      <button class="header-navigation"><span>go</span></button>
+      <button class="header-navigation"><span>run</span></button>
+      <button class="header-navigation"><span>terminal</span></button>
+      <button class="header-navigation"><span>help</span></button>
+    </div>
+
+    <div class="header-containers hc-1 d-flex">
+      <img class="left-arrow-header" src="Images/Logo-&-Icons/Arrow-Icon.png" alt="Arrow-Icon-Left">
+      <img class="right-arrow-header" src="Images/Logo-&-Icons/Arrow-Icon.png" alt="Arrow-Icon-right">
+      <div class="search d-flex">
+        <img src="Images/Logo-&-Icons/Search-VS.png" alt="Search-VS">
+        <span>ducat&hyphen;web&hyphen;dev</span>
+        <input class="search-bar" type="search" name="" id="">
+      </div>
+    </div>
+
+    <div class="header-containers hc-2 d-flex">
+      <div class="toggles d-flex">
+        <div class="toggle-container">
+          <div class="toggle-primary"></div>
+        </div>
+      </div>
+      <div class="toggles d-flex">
+        <div class="toggle-container-panel d-flex">
+          <div class="toggle-panel"></div>
+        </div>
+      </div>
+      <div class="toggles d-flex">
+        <div class="toggle-container-secondary d-flex">
+          <div class="toggle-secondary"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-body d-flex">
+    <div class="explorer-wrapper d-flex">
+      <div class="explorer-left">
+        <div class="explorer-focus-wrapper">
+          <button class="navigation-btn" autofocus></button>
+          <div class="explorer-focus">
+            <div class=" d-flex"></div>
+          </div>
+        </div>
+        <div>
+          <button class="navigation-btn nav-bg-1"></button>
+        </div>
+        <div>
+          <button class="navigation-btn nav-bg-2"></button>
+        </div>
+        <div>
+          <button class="navigation-btn nav-bg-3"></button>
+        </div>
+        <div>
+          <button class="navigation-btn nav-bg-4"></button>
+        </div>
+
+      </div>
+      <div class="explorer-right"></div>
+    </div>
+
+    <div class="text-area-wrapper d-flex">
+      <div class="text-area-navigation d-flex">
+          <button class="text-area-nav-button d-flex">
+            <img class="btn-logo" src="Images/Logo-&-Icons/HTML-Logo.png" alt="HTML-Logo">
+            <span>index&period;html</span>
+            <img class="close-btn" src="Images/Logo-&-Icons/Close-VS.png" alt="Close-VS">
+          </button>
+
+          <button class="run-code-button d-flex" onclick="window.location.href = 'https://jasdev-singh-2003.github.io/3D-card/'">
+            <img src="Images/Logo-&-Icons/Run-Code-Icon.png" alt="Run-Code-Icon">
+          </button>
+      </div>
+
+      <div class="text-area-navigation d-flex">
+        <button class="text-area-nav-button d-flex">
+          <img class="btn-logo" src="Images/Logo-&-Icons/CSS-Logo.png" alt="CSS-Logo">
+          <span>style&period;css</span>
+          <img class="close-btn" src="Images/Logo-&-Icons/Close-VS.png" alt="Close-VS">
+        </button>
+
+        <button class="run-code-button d-flex" onclick="window.location.href = 'https://jasdev-singh-2003.github.io/3D-card/'">
+          <img src="Images/Logo-&-Icons/Run-Code-Icon.png" alt="Run-Code-Icon">
+        </button>
+    </div>
+    
+    <textarea class="code-area" name="code" id="code" spellcheck="false">
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Something-Interesting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="haha">
+      <div class="wrapper">
+        <img class="wrapper-title" src="Images/dark_rider-title.png" alt="dark_rider-title">
+        <img class="big-hero" src="Images/dark_rider-character.webp" alt="">
+      </div>
+    </div>
+
+    <div class="haha">
+      <div class="wrapper bg-1">
+        <img class="wrapper-title" src="Images/force_mage-title.png" alt="dark_rider-title">
+        <img class="big-hero" src="Images/force_mage-character.webp" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html> -->
+      </textarea>
+
+      <textarea class="code-area code-area-css" name="code" id="code" spellcheck="false">
+<!-- *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+       
+.container{
+  /* perspective: 900px; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+        
+.haha{
+  perspective: 900px;
+}
+        
+.wrapper{
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url(Images/dark_rider-cover.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  transform-style: preserve-3d;
+       
+  transition: transform 500ms, box-shadow 500ms;
+}
+        
+.bg-1{
+  background-image: url(Images/force_mage-cover.jpg);
+}
+       
+.wrapper:hover{
+  transform: rotateX(30deg);
+  box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.575);
+}
+       
+.wrapper-title{
+  width: 60%;
+  position: absolute;
+  bottom: 5px;
+  left: 20%;
+  z-index: 1;
+      
+  transition: transform 500ms;
+}
+      
+.wrapper:hover .wrapper-title{
+  transform: translateZ(40px) rotateX(-35deg);
+}
+      
+.big-hero{
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+        
+.wrapper:hover .big-hero{
+  opacity: 1;
+  transform: translateZ(100px) rotateX(-30deg);
+} -->
+              </textarea>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer d-flex"></div>
+  <!-- Footer -->
+
+</body>
+</html>
